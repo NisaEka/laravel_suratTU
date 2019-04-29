@@ -52,6 +52,12 @@ class Kernel extends HttpKernel
      */
     protected $routeMiddleware = [
         'auth' => \App\Http\Middleware\Authenticate::class,
+		'cms' => \App\Http\Middleware\GrafiteCms::class,
+		'cms-api' => \App\Http\Middleware\GrafiteCmsApi::class,
+		'cms-analytics' => \Grafite\Cms\Middleware\GrafiteCmsAnalytics::class,
+		'cms-language' => \App\Http\Middleware\GrafiteCmsLanguage::class,
+		'admin' => \App\Http\Middleware\Admin::class,
+		'active' => \App\Http\Middleware\Active::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,
         'cache.headers' => \Illuminate\Http\Middleware\SetCacheHeaders::class,
