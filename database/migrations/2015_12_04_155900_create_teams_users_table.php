@@ -12,11 +12,13 @@ class CreateTeamsUsersTable extends Migration
      */
     public function up()
     {
+        Schema::dropIfExists('team_user');
+
         Schema::create('team_user', function (Blueprint $table) {
             $table->integer('user_id')->unsigned()->index();
-            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            // $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->integer('team_id')->unsigned()->index();
-            $table->foreign('team_id')->references('id')->on('teams')->onDelete('cascade');
+            // $table->foreign('team_id')->references('id')->on('teams')->onDelete('cascade');
         });
     }
 

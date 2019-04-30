@@ -43,10 +43,10 @@ class LoginController extends Controller
      */
     public function authenticated()
     {
-        if (auth()->user()->hasRole('admin')) {
+        // if (auth()->user()->hasRole('admin')) {
             return redirect('/admin/dashboard');
-        }
+        // }
 
-        return redirect('dashboard');
+        // return redirect('dashboard');
     }
 }
