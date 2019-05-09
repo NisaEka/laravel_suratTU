@@ -1,14 +1,17 @@
-<div class="">
-    {{ Session::get('message') }}
-</div>
+@extends('cms::layouts.dashboard')
+@section('content')
+	<div class="">
+	    {{ Session::get('message') }}
+	</div>
 
-<div class="container">
+	<div class="container">
 
-    {!! Form::model($jenissurat, ['route' => ['jenissurats.update', $jenissurat->id], 'method' => 'patch']) !!}
+	    {!! Form::model($jenissurat, ['route' => ['jenissurats.update', $jenissurat->id], 'method' => 'patch']) !!}
 
-    @form_maker_object($jenissurat, FormMaker::getTableColumns('jenissurats'))
+	    @form_maker_object($jenissurat, FormMaker::getTableColumns('jenissurats'))
 
-    {!! Form::submit('Update') !!}
+	    {!! Form::submit('Update') !!}
 
-    {!! Form::close() !!}
-</div>
+	    {!! Form::close() !!}
+	</div>
+@stop

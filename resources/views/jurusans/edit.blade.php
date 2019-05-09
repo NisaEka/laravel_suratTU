@@ -1,14 +1,17 @@
-<div class="">
-    {{ Session::get('message') }}
-</div>
+@extends('cms::layouts.dashboard')
+@section('content')
+	<div class="">
+	    {{ Session::get('message') }}
+	</div>
 
-<div class="container">
+	<div class="container">
 
-    {!! Form::model($jurusan, ['route' => ['jurusans.update', $jurusan->id], 'method' => 'patch']) !!}
+	    {!! Form::model($jurusan, ['route' => ['jurusans.update', $jurusan->id], 'method' => 'patch']) !!}
 
-    @form_maker_object($jurusan, FormMaker::getTableColumns('jurusans'))
+	    @form_maker_object($jurusan, FormMaker::getTableColumns('jurusans'))
 
-    {!! Form::submit('Update') !!}
+	    {!! Form::submit('Update') !!}
 
-    {!! Form::close() !!}
-</div>
+	    {!! Form::close() !!}
+	</div>
+@stop

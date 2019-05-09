@@ -1,14 +1,17 @@
-<div class="">
-    {{ Session::get('message') }}
-</div>
+@extends('cms::layouts.dashboard')
+@section('content')
+	<div class="">
+	    {{ Session::get('message') }}
+	</div>
 
-<div class="container">
+	<div class="container">
 
-    {!! Form::model($surat, ['route' => ['surats.update', $surat->id], 'method' => 'patch']) !!}
+	    {!! Form::model($surat, ['route' => ['surats.update', $surat->id], 'method' => 'patch']) !!}
 
-    @form_maker_object($surat, FormMaker::getTableColumns('surats'))
+	    @form_maker_object($surat, FormMaker::getTableColumns('surats'))
 
-    {!! Form::submit('Update') !!}
+	    {!! Form::submit('Update') !!}
 
-    {!! Form::close() !!}
-</div>
+	    {!! Form::close() !!}
+	</div>
+@stop

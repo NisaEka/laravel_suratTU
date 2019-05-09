@@ -1,15 +1,18 @@
-<div class="">
-    {{ Session::get('message') }}
-</div>
+@extends('cms::layouts.dashboard')
+@section('content')
+	<div class="">
+	    {{ Session::get('message') }}
+	</div>
 
-<div class="container">
+	<div class="container">
 
-    {!! Form::open(['route' => 'jurusans.store']) !!}
+	    {!! Form::open(['route' => 'jurusans.store']) !!}
 
-    @form_maker_table("jurusans")
+	    @form_maker_table("jurusans")
 
-    {!! Form::submit('Save') !!}
+	    {!! Form::submit('Save') !!}
 
-    {!! Form::close() !!}
+	    {!! Form::close() !!}
 
-</div>
+	</div>
+@stop

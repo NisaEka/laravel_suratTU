@@ -13,6 +13,8 @@ class CreateMahasiswasTable extends Migration
      */
     public function up()
     {
+        Schema::dropIfExists('mahasiswas');
+        
         Schema::create('mahasiswas', function (Blueprint $table) {
             $table->increments('id');
 			$table->string('nim',10);
