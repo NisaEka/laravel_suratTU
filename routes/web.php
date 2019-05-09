@@ -120,3 +120,51 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('roles/search', 'RoleController@index');
     });
 });
+
+/*
+|--------------------------------------------------------------------------
+| Mahasiswa Routes
+|--------------------------------------------------------------------------
+*/
+
+Route::resource('mahasiswas', 'MahasiswasController', ['except' => ['show']]);
+Route::post('mahasiswas/search', [
+    'as' => 'mahasiswas.search',
+    'uses' => 'MahasiswasController@search'
+]);
+
+/*
+|--------------------------------------------------------------------------
+| Jurusan Routes
+|--------------------------------------------------------------------------
+*/
+
+Route::resource('jurusans', 'JurusansController', ['except' => ['show']]);
+Route::post('jurusans/search', [
+    'as' => 'jurusans.search',
+    'uses' => 'JurusansController@search'
+]);
+
+/*
+|--------------------------------------------------------------------------
+| Jenissurat Routes
+|--------------------------------------------------------------------------
+*/
+
+Route::resource('jenissurats', 'JenissuratsController', ['except' => ['show']]);
+Route::post('jenissurats/search', [
+    'as' => 'jenissurats.search',
+    'uses' => 'JenissuratsController@search'
+]);
+
+/*
+|--------------------------------------------------------------------------
+| Surat Routes
+|--------------------------------------------------------------------------
+*/
+
+Route::resource('surats', 'SuratsController', ['except' => ['show']]);
+Route::post('surats/search', [
+    'as' => 'surats.search',
+    'uses' => 'SuratsController@search'
+]);
