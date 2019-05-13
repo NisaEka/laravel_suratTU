@@ -67,4 +67,9 @@ class PagesController extends Controller
 
         return view('cms-frontend::pages.'.$page->template)->with('page', $page);
     }
+
+    public function member()
+    {
+        return view('member.dashboard');
+    }
 }

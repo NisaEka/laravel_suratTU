@@ -7,6 +7,8 @@ use App\Http\Controllers\Controller;
 use App\Services\SuratService;
 use App\Http\Requests\SuratCreateRequest;
 use App\Http\Requests\SuratUpdateRequest;
+use App\Models\Mahasiswa;
+use Auth;
 
 class SuratsController extends Controller
 {
@@ -21,9 +23,21 @@ class SuratsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index(Request $request)
-    {
+    {   
         $surats = $this->service->paginated();
-        return view('surats.index')->with('surats', $surats);
+        
+        return view('surats.index')->with('surats', $surats);          
+        
+        // return $surats;
+    }
+
+    public function index2()
+    {
+        $id = Mahasiswa::get()->where('user_id',Auth::user()->id)[0]['id'];
+
+        $surats = $this->service->paginated();
+        return view('surats.index2')->with('surats', $surats);
+        // return $surats;   
     }
 
     /**

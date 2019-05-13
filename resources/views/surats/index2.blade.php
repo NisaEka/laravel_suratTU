@@ -12,7 +12,7 @@
                 <input class="form-control form-inline pull-right" style="margin-top: 25px"  name="search" placeholder="Search">
                 {!! Form::close() !!}
             </div>
-            <h1 class="pull-left">Pengajuan Surat</h1>
+            <h1 class="pull-left">Surats</h1>
             <a class="btn btn-primary pull-right" style="margin-top: 25px; margin-right: 10px" href="{!! route('surats.create') !!}">Add New</a>
         </div>
 

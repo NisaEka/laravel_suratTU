@@ -84,7 +84,11 @@ Route::group(['middleware' => ['auth']], function () {
     |--------------------------------------------------------------------------
     */
 
-    Route::get('/dashboard', function(){ return Redirect::to('cms/dashboard'); });
+    Route::get('/dashboard', function(){
+        if (auth()->user()->hasRole('admin')) {
+            return Redirect::to('cms/dashboard'); 
+        }   return Redirect::to('member/dashboard');
+     });
 
     
 

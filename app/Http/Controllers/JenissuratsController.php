@@ -122,4 +122,9 @@ class JenissuratsController extends Controller
 
         return redirect(route('jenissurats.index'))->withErrors('Failed to delete');
     }
+
+    public function detailForm($id)
+    {
+        return response()->$id;
+    }
 }

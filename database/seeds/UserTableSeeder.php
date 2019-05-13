@@ -26,7 +26,19 @@ class UserTableSeeder extends Seeder
             $user->meta->update([
                 'is_active' => true,
             ]);
+
+            $user2 = User::create([
+                'name' => 'Ahmad',
+                'email' => 'ahmad@example.com',
+                'password' => bcrypt('member'),
+            ]);
+            $service->create($user2, 'member', 'member', false);
+            $user2->meta->update([
+                'is_active' => true,
+            ]);
         }
+
+        
 
     }
 }
