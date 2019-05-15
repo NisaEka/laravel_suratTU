@@ -41,7 +41,7 @@
                         <li><a href="#team" class="scroll">Buka Dashboard</a></li>
                         <li><a href="{{ url('/logout') }}" class="scroll">Logout</a></li>
                         @else
-                        <li><a href="#login" class="scroll">Login</a></li>
+                        <li><a href="{{url('login')}}" class="scroll">Login</a></li>
                         @endif
                         
                     </ul>
@@ -87,7 +87,11 @@
                 <h3 class="tittle_head text-white">Login terlebih dahulu untuk masuk ke sistem </h3>
             </div>
             <div class="newsletter-info-wthree text-center pt-md-5 pt-3">
-                <a class="btn btn-primary mt-lg-5 mt-3 agile-link-bnr scroll" href="#login" role="button">Login</a>
+                @if (Auth::user())
+                <a class="btn btn-primary mt-lg-5 mt-3 agile-link-bnr scroll" href="" data-toggle="modal" data-target="#login" role="button">Buka Dashboard </a>
+                @else        
+                <a class="btn btn-primary mt-lg-5 mt-3 agile-link-bnr scroll" href="{{url('login')}}" data-toggle="modal" data-target="#login" role="button">Login</a>
+                @endif
             </div>
 
         </div>
@@ -99,6 +103,8 @@
         </div>
     </section>
     <!-- //footer -->
+
+
 
 </body>
 

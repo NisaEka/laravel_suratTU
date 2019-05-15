@@ -1,30 +1,27 @@
-@extends('cms-frontend::layout.master')
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="{{asset('css/login.css')}}">
+</head>
+<body>
 
-@section('content')
-
-    <div class="form-small">
-
-        <h2 class="text-center">Please sign in</h2>
-
+    <div class="main-agileits">
+        <h1 class="text-center">Please sign in</h1>
+        <div class="mainw3-agileinfo form" id="login">
         <form method="POST" action="{{ url('/login') }}">
             {!! csrf_field() !!}
-            <div class="col-md-12 mt-3">
-                <label>Email</label>
-                <input class="form-control" type="email" name="email" placeholder="Email" value="{{ old('email') }}">
+            <div class="field-wrap">
+                <input class="form-control" type="email" name="email" placeholder="Email" value="{{ old('email') }}" placeholder="email">
             </div>
-            <div class="col-md-12 mt-3">
-                <label>Password</label>
-                <input class="form-control" type="password" name="password" placeholder="Password" id="password">
-            </div>
-            <div class="col-md-12 mt-3">
-                <label>
-                    Remember Me <input type="checkbox" name="remember">
-                </label>
+            <div class="field-wrap">
+                <input class="form-control" type="password" name="password" placeholder="Password" id="password" placeholder="password">
             </div>
             <div class="col-md-12 mt-3">
                 <div class="btn-toolbar justify-content-between">
-                    <button class="btn btn-primary" type="submit">Login</button>
-                    <a class="btn btn-link" href="{{ url('/password/reset') }}">Forgot Password</a>
+                    <button class="button button-block" type="submit">Login</button>
+                    <p class="forgot"><a class="btn btn-link" href="{{ url('/password/reset') }}">Forgot Password</a></p>
+                    
                 </div>
             </div>
 
@@ -34,8 +31,8 @@
                 </div>
             @endif
         </form>
-
+    </div>
     </div>
 
-@stop
-
+</body>
+</html>
