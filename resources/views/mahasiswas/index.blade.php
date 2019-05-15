@@ -22,12 +22,15 @@
             @else
                 <table class="table">
                     <thead>
-                        <th>Name</th>
+                        <th>NIM</th>
+                        <th>Nama</th>
                         <th width="50px">Action</th>
                     </thead>
                     <tbody>
                     @foreach($mahasiswas as $mahasiswa)
                         <tr>
+                            <td>{{$mahasiswa->nim}}</td>
+                            <td>{{$mahasiswa->nama}}</td>
                             <td>
                                 <a href="{!! route('mahasiswas.edit', [$mahasiswa->id]) !!}">{{ $mahasiswa->name }}</a>
                             </td>
