@@ -14,17 +14,17 @@
             <div class="col-lg-2">
                 <div class="card card-dark text-center">
                     <div class="card-header">
-                        Users
+                        Surat Masuk
                     </div>
                     <div class="card-body">
-                        <span class="lead">{{ app(App\Models\User::class)->count() }}</span>
+                        <span class="lead">{{ app(App\Models\Surat::class)->count() }}</span>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2">
                 <div class="card card-dark text-center">
                     <div class="card-header">
-                        Blogs
+                        Sedang di proses
                     </div>
                     <div class="card-body">
                         <span class="lead">{{ app(Grafite\Cms\Models\Blog::class)->count() }}</span>
@@ -34,43 +34,14 @@
             <div class="col-lg-2">
                 <div class="card card-dark text-center">
                     <div class="card-header">
-                        Pages
+                        Surat Selesai
                     </div>
                     <div class="card-body">
                         <span class="lead">{{ app(Grafite\Cms\Models\Page::class)->count() }}</span>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2">
-                <div class="card card-dark text-center">
-                    <div class="card-header">
-                        Widgets
-                    </div>
-                    <div class="card-body">
-                        <span class="lead">{{ app(Grafite\Cms\Models\Widget::class)->count() }}</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2">
-                <div class="card card-dark text-center">
-                    <div class="card-header">
-                        Events
-                    </div>
-                    <div class="card-body">
-                        <span class="lead">{{ app(Grafite\Cms\Models\Event::class)->count() }}</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2">
-                <div class="card card-dark text-center">
-                    <div class="card-header">
-                        FAQs
-                    </div>
-                    <div class="card-body">
-                        <span class="lead">{{ app(Grafite\Cms\Models\FAQ::class)->count() }}</span>
-                    </div>
-                </div>
-            </div>
+            
         </div>
 
         <div class="row">

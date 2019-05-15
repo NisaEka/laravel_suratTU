@@ -18,6 +18,7 @@ class CreateSuratsTable extends Migration
 			$table->integer('mhs_id');
 			$table->integer('jenissurat');
 			$table->text('detail');
+            $table->boolean('hasread');
 
             $table->timestamps();
         });
