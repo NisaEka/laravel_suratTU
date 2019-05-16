@@ -33,7 +33,7 @@ class MahasiswaTableSeeder extends Seeder
 	            'tempatlahir' => 'Jakarta',
 	            'tanggallahir' => '1997-01-01',
 	            'telp' => '081000000000',
-	            'user_id' => '2'
+	            'user_id' => '3'
 	        ]);
 	    }
 
