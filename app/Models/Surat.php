@@ -17,6 +17,9 @@ class Surat extends Model
 		'mhs_id',
 		'jenissurat',
 		'detail',
+        'user_id',
+        'hasread',
+        'status'
 
     ];
 

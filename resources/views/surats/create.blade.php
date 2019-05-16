@@ -44,7 +44,7 @@
 
 			    @foreach(json_decode(app(App\Models\Jenissurat::class)->find(1)->detail) as $detail)
 
-			    	@input_maker_create('detail',['type'=>'textarea','placeholder'=>$detail])
+			    	@input_maker_create('detail',['type'=>'textarea'])
 
 			    @endforeach
 			</div>

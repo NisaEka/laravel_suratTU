@@ -90,6 +90,10 @@ Route::group(['middleware' => ['auth']], function () {
         }   return Redirect::to('member/dashboard');
      });
 
+    Route::get('member/dashboard', function(){
+        return view('member.dashboard');
+    });
+
     
 
     /*

@@ -24,6 +24,17 @@ class MahasiswaTableSeeder extends Seeder
 	            'telp' => '081000000000',
 	            'user_id' => '2'
 	        ]);
+
+	        Mahasiswa::create([
+	        	'nim' => '1167050002',
+	            'nama' => 'Adi',
+	            'jurusan' => '1',
+	            'semester' => '6',
+	            'tempatlahir' => 'Jakarta',
+	            'tanggallahir' => '1997-01-01',
+	            'telp' => '081000000000',
+	            'user_id' => '2'
+	        ]);
 	    }
 
     }

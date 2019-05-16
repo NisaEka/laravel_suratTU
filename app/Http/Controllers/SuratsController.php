@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Services\SuratService;
 use App\Http\Requests\SuratCreateRequest;
 use App\Http\Requests\SuratUpdateRequest;
+use App\Models\Surat;
 use App\Models\Mahasiswa;
 use Auth;
 
@@ -24,7 +25,8 @@ class SuratsController extends Controller
      */
     public function index(Request $request)
     {   
-        $surats = $this->service->paginated();
+        // $surats = $this->service->paginated();
+        $surats = Surat::where('user_id',Auth::user()->id)->orderBy('id','DESC')->paginate(25);
         
         return view('surats.index')->with('surats', $surats);          
         
@@ -69,13 +71,20 @@ class SuratsController extends Controller
      */
     public function store(SuratCreateRequest $request)
     {
+        $request->merge([
+            'user_id'=>Auth::user()->id,
+            'hasread'=>'0',
+            'status'=>'masuk',
+        ]);
+
         $result = $this->service->create($request->except('_token'));
 
         if ($result) {
-            return redirect(route('surats.edit', ['id' => $result->id]))->with('message', 'Successfully created');
+            return redirect(route('surats.index', ['id' => $result->id]))->with('message', 'Successfully created');
         }
 
         return redirect(route('surats.index'))->withErrors('Failed to create');
+        // return $request;
     }
 
     /**
