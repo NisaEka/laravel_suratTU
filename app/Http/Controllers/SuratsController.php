@@ -33,13 +33,25 @@ class SuratsController extends Controller
         // return $surats;
     }
 
-    public function index2()
+    public function suratmasuk()
     {
-        $id = Mahasiswa::get()->where('user_id',Auth::user()->id)[0]['id'];
+        $surats = Surat::where('status','masuk')->orderBy('id','DESC')->paginate(25);
+        
+        return view('admin.suratmasuk')->with('surats', $surats);          
+    }
 
-        $surats = $this->service->paginated();
-        return view('surats.index2')->with('surats', $surats);
-        // return $surats;   
+    public function suratproses()
+    {
+        $surats = Surat::where('status','proses')->orderBy('id','DESC')->paginate(25);
+        
+        return view('admin.suratproses')->with('surats', $surats);          
+    }    
+
+    public function suratkeluar()
+    {
+        $surats = Surat::where('status','selesai')->orderBy('id','DESC')->paginate(25);
+        
+        return view('admin.suratkeluar')->with('surats', $surats);          
     }
 
     /**

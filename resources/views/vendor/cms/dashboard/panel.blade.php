@@ -26,17 +26,20 @@
     @endif
     <li class="sidebar-header"><span>Surat</span></li>
     <li class="nav-item @if (Request::is(cms()->backendRoute.'/dashboard')) active @endif">
-        <a class="nav-link" href="{!! route('surats.index') !!}"><span class="fa fa-fw fa-envelope"></span> Surat Masuk</a>
+        <a class="nav-link" href="{!! url('admin/suratmasuk') !!}"><span class="fa fa-fw fa-envelope"></span> Surat Masuk</a>
     </li>
     <li class="nav-item @if (Request::is(cms()->backendRoute.'/dashboard')) active @endif">
-        <a class="nav-link" href=""><span class="fa fa-fw fa-envelope"></span> Surat Di Proses</a>
+        <a class="nav-link" href="{!! url('admin/suratproses') !!}"><span class="fa fa-fw fa-envelope"></span> Surat Di Proses</a>
     </li>
     <li class="nav-item @if (Request::is(cms()->backendRoute.'/dashboard')) active @endif">
-        <a class="nav-link" href=""><span class="fa fa-fw fa-envelope"></span> Surat Keluar</a>
+        <a class="nav-link" href="{!! url('admin/suratkeluar') !!}"><span class="fa fa-fw fa-envelope"></span> Surat Keluar</a>
     </li>
     <li class="sidebar-header"><span>Lainnya</span></li>
     <li class="nav-item @if (Request::is(cms()->backendRoute.'/dashboard')) active @endif">
         <a class="nav-link" href="{{route('mahasiswas.index')}}"><span class="fa fa-fw fa-user"></span> Mahasiswa</a>
+    </li>
+    <li class="nav-item @if (Request::is(cms()->backendRoute.'/dashboard')) active @endif">
+        <a class="nav-link" href="{{route('jenissurats.index')}}"><span class="fa fa-fw fa-envelope"></span> Jenis Surat</a>
     </li>
 @endif
 

@@ -176,3 +176,6 @@ Route::post('surats/search', [
     'as' => 'surats.search',
     'uses' => 'SuratsController@search'
 ]);
+Route::get('admin/suratmasuk', 'SuratsController@suratmasuk');
+Route::get('admin/suratproses', 'SuratsController@suratproses');
+Route::get('admin/suratkeluar', 'SuratsController@suratkeluar');

@@ -1,4 +1,12 @@
 @extends('cms::layouts.dashboard')
+@section('pageTitle') 
+	@if(Auth::user()->hasRole('admin'))
+	Informasi Surat
+	@else
+	Edit Surat 
+	@endif
+@stop
+
 @section('content')
 	<div class="">
 	    {{ Session::get('message') }}
@@ -43,9 +51,9 @@
 
 			    @endforeach
 			</div>
-
+		@if(!Auth::user()->hasRole('admin'))
 	    {!! Form::submit('Update') !!}
-
+	    @endif
 	    {!! Form::close() !!}
 	</div>
 @stop
