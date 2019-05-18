@@ -7,7 +7,7 @@ Tahapan copy project
 4. cd nama_folder
 5. composer install
 6. buka file .env.example
-7. ctrl+A >> ctrl+C >> ctrl_N >> ctrl+V
+7. ctrl+A >> ctrl+C >> ctrl+N >> ctrl+V
 8. simpan sebagai .env
 9. buat database
 10. ubah nama database, username, password di file .env
