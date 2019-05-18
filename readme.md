@@ -15,3 +15,10 @@ Tahapan copy project
 12. php artisan key:generate
 13. php artisan db:seed
 14. php artisan serve
+
+login admin
+email : admin@example.con
+pass  : admin
+login mahasiswa
+email : ahmad@example.com
+pass  : member
