@@ -23,6 +23,46 @@ class JenissuratTableSeeder extends Seeder
 	            'name' => 'surat pernyataan masih kuliah',
 	            'detail' => '["nip","nama_wali","nip","pangkat","instansi"]',
 	        ]);
+
+	        Jenissurat::create([
+	            'name' => 'surat pernyataan tidak menerima beasiswa dari instansi manapun',
+	            'detail' => '["keperluan"]',
+	        ]);
+
+	        Jenissurat::create([
+	            'name' => 'surat keterangan kelakuan baik',
+	            'detail' => '["keperluan"]',
+	        ]);
+
+	         Jenissurat::create([
+	            'name' => 'surat pengajuan observasi',
+	            'detail' => '["mata kuliah, tempat observasi"]',
+	        ]);
+
+	         Jenissurat::create([
+	            'name' => 'surat bimbingan skripsi',
+	            'detail' => '["tanggal disetujui, judul skripsi, pembimbing"]',
+	        ]);
+
+	         Jenissurat::create([
+	            'name' => 'surat izin penelitian',
+	            'detail' => '["nama tempat penelitian, alamat (kota/provinsi)"]',
+	        ]);
+
+	         Jenissurat::create([
+	            'name' => 'surat praktek kerja lapangan',
+	            'detail' => '["nama instansi/lembaga, tempat praktek"]',
+	        ]);
+
+	          Jenissurat::create([
+	            'name' => 'surat keterangan lulus',
+	            'detail' => '["tanggal lulus, judulskripsi, yudisium/IPK"]',
+	        ]);
+
+	          Jenissurat::create([
+	            'name' => 'lainnya',
+	            'detail' => '["nama surat, keperluan"]',
+	        ]);
 	    }
     }
 }
