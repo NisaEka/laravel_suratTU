@@ -36,32 +36,32 @@ class JenissuratTableSeeder extends Seeder
 
 	         Jenissurat::create([
 	            'name' => 'surat pengajuan observasi',
-	            'detail' => '["mata kuliah, tempat observasi"]',
+	            'detail' => '["mata_kuliah,tempat_observasi"]',
 	        ]);
 
 	         Jenissurat::create([
 	            'name' => 'surat bimbingan skripsi',
-	            'detail' => '["tanggal disetujui, judul skripsi, pembimbing"]',
+	            'detail' => '["tanggal_disetujui,judul_skripsi,pembimbing"]',
 	        ]);
 
 	         Jenissurat::create([
 	            'name' => 'surat izin penelitian',
-	            'detail' => '["nama tempat penelitian, alamat (kota/provinsi)"]',
+	            'detail' => '["nama_tempat_penelitian,alamat_(kota/provinsi)"]',
 	        ]);
 
 	         Jenissurat::create([
 	            'name' => 'surat praktek kerja lapangan',
-	            'detail' => '["nama instansi/lembaga, tempat praktek"]',
+	            'detail' => '["nama_instansi/lembaga,tempat_praktek"]',
 	        ]);
 
 	          Jenissurat::create([
 	            'name' => 'surat keterangan lulus',
-	            'detail' => '["tanggal lulus, judulskripsi, yudisium/IPK"]',
+	            'detail' => '["tanggal_lulus,judul_skripsi,yudisium/IPK"]',
 	        ]);
 
 	          Jenissurat::create([
 	            'name' => 'lainnya',
-	            'detail' => '["nama surat, keperluan"]',
+	            'detail' => '["nama_surat,keperluan"]',
 	        ]);
 	    }
     }

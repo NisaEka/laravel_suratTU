@@ -16,426 +16,438 @@ class UserTableSeeder extends Seeder
         $service = app(UserService::class);
 
         if (!User::where('name', 'admin')->first()) {
+
             $user = User::create([
-                'name' => '1167010001',
-                'email' => '1167010001@gmail.com',
-                'password' => bcrypt('1167010001'),
+                'name' => 'Admin',
+                'email' => 'Admin@example.com',
+                'password' => bcrypt('admin'),
             ]);
 
-            $service->create($user, '1167010001', '1167010001', false);
+            $service->create($user, 'admin', 'admin', false);
             $user->meta->update([
                 'is_active' => true,
             ]);
 
-            $user2 = User::create([
-                'name' => '1167010002',
-                'email' => '1167010002@gmail.com',
-                'password' => bcrypt('1187010002'),
+            $user1 = User::create([
+                'name' => 'Ahmad',
+                'email' => 'Ahmad@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user2, '1167010002', '1167010002', false);
+
+            $service->create($user1, 'member', 'member', false);
+            $user1->meta->update([
+                'is_active' => true,
+            ]);
+
+            $user2 = User::create([
+                'name' => 'Ilham',
+                'email' => 'Ilham@example.com',+
+                'password' => bcrypt('member'),
+            ]);
+            $service->create($user2, 'member', 'member', false);
             $user2->meta->update([
                 'is_active' => true,
             ]);
 
             $user3 = User::create([
-                'name' => '1167020001',
-                'email' => '1167020001@gmail.com',
-                'password' => bcrypt('1167020001'),
+                'name' => 'Usup',
+                'email' => 'Usup@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user3, '1167020001', '1167020001', false);
+            $service->create($user3, 'member', 'member', false);
             $user3->meta->update([
                 'is_active' => true,
             ]);
 
             $user4 = User::create([
-                'name' => '1167020002',
-                'email' => '1167020002@gmail.com',
-                'password' => bcrypt('1167020002'),
+                'name' => 'Elang',
+                'email' => 'Elang@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user4, '1167020002', '1167020002', false);
+            $service->create($user4, 'member', 'member', false);
             $user4->meta->update([
                 'is_active' => true,
             ]);
 
             $user5 = User::create([
-                'name' => '1167030001',
-                'email' => '1167030001@gmail.com',
-                'password' => bcrypt('1167030001'),
+                'name' => 'Orlanda',
+                'email' => 'Orlanda@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user5, '1167030001', '1167030001', false);
+            $service->create($user5, 'member', 'member', false);
             $user5->meta->update([
                 'is_active' => true,
             ]);
 
             $user6 = User::create([
-                'name' => '1167030002',
-                'email' => '1167030002@gmail.com',
-                'password' => bcrypt('1167030002'),
+                'name' => 'Syafina',
+                'email' => 'Syafina@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user6, '1167030002', '1167030002', false);
+            $service->create($user6, 'member', 'member', false);
             $user6->meta->update([
                 'is_active' => true,
             ]);
 
             $user7 = User::create([
-                'name' => '1167040001',
-                'email' => '1167040001@gmail.com',
-                'password' => bcrypt('1167040001'),
+                'name' => 'Alika',
+                'email' => 'Alika@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user7, '1167040001', '1167040001', false);
+            $service->create($user7, 'member', 'member', false);
             $user7->meta->update([
                 'is_active' => true,
             ]);
 
             $user8 = User::create([
-                'name' => '1167040002',
-                'email' => '1167040002@gmail.com',
-                'password' => bcrypt('1167040002'),
+                'name' => 'Imron',
+                'email' => 'Imron@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user8, '1167040002', '1167040002', false);
+            $service->create($user8, 'member', 'member', false);
             $user8->meta->update([
                 'is_active' => true,
             ]);
 
             $user9 = User::create([
-                'name' => '1167050001',
-                'email' => '1167050001@gmail.com',
-                'password' => bcrypt('1167050001'),
+                'name' => 'Uki',
+                'email' => 'Uki@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user9, '1167050001', '1167050001', false);
+            $service->create($user9, 'member', 'member', false);
             $user9->meta->update([
                 'is_active' => true,
             ]);
 
             $user10 = User::create([
-                'name' => '1167050002',
-                'email' => '1167050002@gmail.com',
-                'password' => bcrypt('1167050002'),
+                'name' => 'El',
+                'email' => 'El@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user10, '1167050002', '1167050002', false);
+            $service->create($user10, 'member', 'member', false);
             $user10->meta->update([
                 'is_active' => true,
             ]);
 
             $user11 = User::create([
-                'name' => '1167060001',
-                'email' => '1167060001@gmail.com',
-                'password' => bcrypt('1167060001'),
+                'name' => 'Oriza',
+                'email' => 'Oriza@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user11, '1167060001', '1167060001', false);
+            $service->create($user11, 'member', 'member', false);
             $user11->meta->update([
                 'is_active' => true,
             ]);
 
             $user12 = User::create([
-                'name' => '1167060002',
-                'email' => '1167060002@gmail.com',
-                'password' => bcrypt('1167060002'),
+                'name' => 'Syafrudin',
+                'email' => 'Syafrudin@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user12, '1167060002', '1167060002', false);
+            $service->create($user12, 'member', 'member', false);
             $user12->meta->update([
                 'is_active' => true,
             ]);
 
              $user13 = User::create([
-                'name' => '1177010001',
-                'email' => '1177010001@gmail.com',
-                'password' => bcrypt('1177010001'),
+                'name' => 'Alan',
+                'email' => 'Alan@example.com',
+                'password' => bcrypt('member'),
             ]);
 
-            $service->create($user13, '1177010001', '1177010001', false);
+            $service->create($user13, 'member', 'member', false);
             $user13->meta->update([
                 'is_active' => true,
             ]);
 
             $user14 = User::create([
-                'name' => '1177010002',
-                'email' => '1177010002@gmail.com',
-                'password' => bcrypt('1177010002'),
+                'name' => 'Irfanudin',
+                'email' => 'Irfanudin@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user14, '1177010002', '1177010002', false);
+            $service->create($user14, 'member', 'member', false);
             $user14->meta->update([
                 'is_active' => true,
             ]);
 
             $user15 = User::create([
-                'name' => '1177020001',
-                'email' => '1177020001@gmail.com',
-                'password' => bcrypt('1177020001'),
+                'name' => 'Ulandari',
+                'email' => 'Ulandari@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user15, '1177020001', '1177020001', false);
+            $service->create($user15, 'member', 'member', false);
             $user15->meta->update([
                 'is_active' => true,
             ]);
 
             $user16 = User::create([
-                'name' => '1177020002',
-                'email' => '1177020002@gmail.com',
-                'password' => bcrypt('1177020002'),
+                'name' => 'Ersa',
+                'email' => 'Ersa@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user16, '1177020002', '1177020002', false);
+            $service->create($user16, 'member', 'member', false);
             $user16->meta->update([
                 'is_active' => true,
             ]);
 
             $user17 = User::create([
-                'name' => '1177030001',
-                'email' => '1177030001@gmail.com',
-                'password' => bcrypt('1177030001'),
+                'name' => 'Omasi',
+                'email' => 'Omasi@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user17, '1177030001', '1177030001', false);
+            $service->create($user17, 'member', 'member', false);
             $user17->meta->update([
                 'is_active' => true,
             ]);
 
             $user18 = User::create([
-                'name' => '1177030002',
-                'email' => '1177030002@gmail.com',
-                'password' => bcrypt('1177030002'),
+                'name' => 'Soleh',
+                'email' => 'Soleh@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user18, '1177030002', '1177030002', false);
+            $service->create($user18, 'member', 'member', false);
             $user18->meta->update([
                 'is_active' => true,
             ]);
 
             $user19 = User::create([
-                'name' => '1177040001',
-                'email' => '1177040001@gmail.com',
-                'password' => bcrypt('1177040001'),
+                'name' => 'Akbar',
+                'email' => 'Akbar@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user19, '1177040001', '1177040001', false);
+            $service->create($user19, 'member', 'member', false);
             $user19->meta->update([
                 'is_active' => true,
             ]);
 
             $user20 = User::create([
-                'name' => '1177040002',
-                'email' => '1177040002@gmail.com',
-                'password' => bcrypt('1177040002'),
+                'name' => 'Itek',
+                'email' => 'Itek@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user20, '1177040002', '1177040002', false);
+            $service->create($user20, 'member', 'member', false);
             $user20->meta->update([
                 'is_active' => true,
             ]);
 
             $user21 = User::create([
-                'name' => '1177050001',
-                'email' => '1177050001@gmail.com',
-                'password' => bcrypt('1177050001'),
+                'name' => 'Uca',
+                'email' => 'Uca@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user21, '1177050001', '1177050001', false);
+            $service->create($user21, 'member', 'member', false);
             $user21->meta->update([
                 'is_active' => true,
             ]);
 
             $user22 = User::create([
-                'name' => '1177050002',
-                'email' => '1177050002@gmail.com',
-                'password' => bcrypt('1177050002'),
+                'name' => 'Ega',
+                'email' => 'Ega@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user22, '1177050002', '1177050002', false);
+            $service->create($user22, 'member', 'member', false);
             $user22->meta->update([
                 'is_active' => true,
             ]);
 
             $user23 = User::create([
-                'name' => '1177060001',
-                'email' => '1177060001@gmail.com',
-                'password' => bcrypt('1177060001'),
+                'name' => 'Ozi',
+                'email' => 'Ozi@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user23, '1177060001', '1177060001', false);
+            $service->create($user23, 'member', 'member', false);
             $user23->meta->update([
                 'is_active' => true,
             ]);
 
             $user24 = User::create([
-                'name' => '1177060002',
-                'email' => '1177060002@gmail.com',
-                'password' => bcrypt('1177060002'),
+                'name' => 'Sapri',
+                'email' => 'Sapri@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user24, '1177060002', '1177060002', false);
+            $service->create($user24, 'member', 'member', false);
             $user24->meta->update([
                 'is_active' => true,
             ]);
 
             //Angkatan 2018
              $user25 = User::create([
-                'name' => '1187010001',
-                'email' => '1187010001@gmail.com',
-                'password' => bcrypt('1187010001'),
+                'name' => 'Alamnash',
+                'email' => 'Alamnash@example.com',
+                'password' => bcrypt('member'),
             ]);
 
-            $service->create($user25, '1187010001', '1187010001', false);
+            $service->create($user25, 'member', 'member', false);
             $user25->meta->update([
                 'is_active' => true,
             ]);
 
             $user26 = User::create([
-                'name' => '1187010002',
-                'email' => '1187010002@gmail.com',
-                'password' => bcrypt('1187010002'),
+                'name' => 'Ikrar',
+                'email' => 'Ikrar@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user26, '1187010002', '1187010002', false);
+            $service->create($user26, 'member', 'member', false);
             $user26->meta->update([
                 'is_active' => true,
             ]);
 
             $user27 = User::create([
-                'name' => '1187020001',
-                'email' => '1187020001@gmail.com',
-                'password' => bcrypt('1187020001'),
+                'name' => 'Utsman',
+                'email' => 'Utsman@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user27, '1187020001', '1187020001', false);
+            $service->create($user27, 'member', 'member', false);
             $user27->meta->update([
                 'is_active' => true,
             ]);
 
             $user28 = User::create([
-                'name' => '1187020002',
-                'email' => '1187020002@gmail.com',
-                'password' => bcrypt('1187020002'),
+                'name' => 'Erman',
+                'email' => 'Erman@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user28, '1187020002', '1187020002', false);
+            $service->create($user28, 'member', 'member', false);
             $user28->meta->update([
                 'is_active' => true,
             ]);
 
             $user29 = User::create([
-                'name' => '1187030001',
-                'email' => '1187030001@gmail.com',
-                'password' => bcrypt('1187030001'),
+                'name' => 'Oki',
+                'email' => 'Oki@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user29, '1187030001', '1187030001', false);
+            $service->create($user29, 'member', 'member', false);
             $user29->meta->update([
                 'is_active' => true,
             ]);
 
             $user30 = User::create([
-                'name' => '1187030002',
-                'email' => '1187030002@gmail.com',
-                'password' => bcrypt('1187030002'),
+                'name' => 'Syafira',
+                'email' => 'Syafira@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user30, '1187030002', '1187030002', false);
+            $service->create($user30, 'member', 'member', false);
             $user30->meta->update([
                 'is_active' => true,
             ]);
 
             $user31 = User::create([
-                'name' => '1187040001',
-                'email' => '1187040001@gmail.com',
-                'password' => bcrypt('1187040001'),
+                'name' => 'Alkautsar',
+                'email' => 'Alkautsar@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user31, '1187040001', '1187040001', false);
+            $service->create($user31, 'member', 'member', false);
             $user31->meta->update([
                 'is_active' => true,
             ]);
 
             $user32 = User::create([
-                'name' => '1187040002',
-                'email' => '1187040002@gmail.com',
-                'password' => bcrypt('1187040002'),
+                'name' => 'Ibrahim',
+                'email' => 'Ibrahim@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user32, '1187040002', '1187040002', false);
+            $service->create($user32, 'member', 'member', false);
             $user32->meta->update([
                 'is_active' => true,
             ]);
 
             $user33 = User::create([
-                'name' => '1187050001',
-                'email' => '1187050001@gmail.com',
-                'password' => bcrypt('1187050001'),
+                'name' => 'Ubbanusyah',
+                'email' => 'Ubbanusyah@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user33, '1187050001', '1187050001', false);
+            $service->create($user33, 'member', 'member', false);
             $user33->meta->update([
                 'is_active' => true,
             ]);
 
             $user34 = User::create([
-                'name' => '1187050002',
-                'email' => '1187050002@gmail.com',
-                'password' => bcrypt('1187050002'),
+                'name' => 'Eka',
+                'email' => 'Eka@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user34, '1187050002', '1187050002', false);
+            $service->create($user34, 'member', 'member', false);
             $user34->meta->update([
                 'is_active' => true,
             ]);
 
             $user35 = User::create([
-                'name' => '1187060001',
-                'email' => '1187060001@gmail.com',
-                'password' => bcrypt('1187060001'),
+                'name' => 'Ola',
+                'email' => 'Ola@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user35, '1187060001', '1187060001', false);
+            $service->create($user35, 'member', 'member', false);
             $user35->meta->update([
                 'is_active' => true,
             ]);
 
             $user36 = User::create([
-                'name' => '1187060002',
-                'email' => '1187060002@gmail.com',
-                'password' => bcrypt('1187060002'),
+                'name' => 'Syakir',
+                'email' => 'Syakir@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user36, '1187060002', '1187060002', false);
+            $service->create($user36, 'member', 'member', false);
             $user36->meta->update([
                 'is_active' => true,
             ]);
 
             $user37 = User::create([
-                'name' => '1167070001',
-                'email' => '1167070001@gmail.com',
-                'password' => bcrypt('1167070001'),
+                'name' => 'Jessica',
+                'email' => 'Jessica@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user37, '1167070001', '1167070001', false);
+            $service->create($user37, 'member', 'member', false);
             $user37->meta->update([
                 'is_active' => true,
             ]);
 
             $user38 = User::create([
-                'name' => '1167070002',
-                'email' => '1167070002@gmail.com',
-                'password' => bcrypt('1167070002'),
+                'name' => 'Aihara',
+                'email' => 'Aihara@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user36, '1167070002', '1167070002', false);
+            $service->create($user36, 'member', 'member', false);
             $user38->meta->update([
                 'is_active' => true,
             ]);
 
             $user39 = User::create([
-                'name' => '1177070001',
-                'email' => '1177070001@gmail.com',
-                'password' => bcrypt('1177070001'),
+                'name' => 'Resti',
+                'email' => 'Resti@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user39, '1177070001', '1177070001', false);
+            $service->create($user39, 'member', 'member', false);
             $user39->meta->update([
                 'is_active' => true,
             ]);
 
             $user40 = User::create([
-                'name' => '1177070002',
-                'email' => '1177070002@gmail.com',
-                'password' => bcrypt('1177070002'),
+                'name' => 'Jung',
+                'email' => 'Jung@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user40, '1177070002', '1177070002', false);
+            $service->create($user40, 'member', 'member', false);
             $user40->meta->update([
                 'is_active' => true,
             ]);
 
             $user41 = User::create([
-                'name' => '1187070001',
-                'email' => '1187070001@gmail.com',
-                'password' => bcrypt('1187070001'),
+                'name' => 'Darren',
+                'email' => 'Darren@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user41, '1187070001', '1187070001', false);
+            $service->create($user41, 'member', 'member', false);
             $user41->meta->update([
                 'is_active' => true,
             ]);
 
             $user42 = User::create([
-                'name' => '1187070002',
-                'email' => '1187070002@gmail.com',
-                'password' => bcrypt('1187070002'),
+                'name' => 'Kento',
+                'email' => 'Kento@example.com',
+                'password' => bcrypt('member'),
             ]);
-            $service->create($user42, '1187070002', '1187070002', false);
+            $service->create($user42, 'member', 'member', false);
             $user42->meta->update([
                 'is_active' => true,
             ]);

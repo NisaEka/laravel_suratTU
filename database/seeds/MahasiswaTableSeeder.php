@@ -23,7 +23,7 @@ class MahasiswaTableSeeder extends Seeder
 	            'tempatlahir' => 'Banten',
 	            'tanggallahir' => '1998-02-01',
 	            'telp' => '081234567890',
-	            'user_id' => '1167010001'
+	            'user_id' => '1'
 	        ]);
 
 	        Mahasiswa::create([
@@ -34,7 +34,7 @@ class MahasiswaTableSeeder extends Seeder
 	            'tempatlahir' => 'Jakarta',
 	            'tanggallahir' => '1997-04-03',
 	            'telp' => '081223656854',
-	            'user_id' => '1167010002'
+	            'user_id' => '2'
 	        ]);
 
 	         Mahasiswa::create([
@@ -45,7 +45,7 @@ class MahasiswaTableSeeder extends Seeder
 	            'tempatlahir' => 'Bandung',
 	            'tanggallahir' => '1998-06-05',
 	            'telp' => '083856741123',
-	            'user_id' => '1167020001'
+	            'user_id' => '3'
 	        ]);
 
 	         Mahasiswa::create([
@@ -56,7 +56,7 @@ class MahasiswaTableSeeder extends Seeder
 	            'tempatlahir' => 'Yogyakarta',
 	            'tanggallahir' => '1997-08-07',
 	            'telp' => '089789100200',
-	            'user_id' => '1167020002'
+	            'user_id' => '4'
 	        ]);
 
 	         Mahasiswa::create([
@@ -67,7 +67,7 @@ class MahasiswaTableSeeder extends Seeder
 	            'tempatlahir' => 'Semarang',
 	            'tanggallahir' => '1997-10-09',
 	            'telp' => '089789103200',
-	            'user_id' => '1167030001'
+	            'user_id' => '5'
 	        ]);
 
 	         Mahasiswa::create([
@@ -78,7 +78,7 @@ class MahasiswaTableSeeder extends Seeder
 	            'tempatlahir' => 'Surabaya',
 	            'tanggallahir' => '1997-12-11',
 	            'telp' => '081256753891',
-	            'user_id' => '1167030002'
+	            'user_id' => '6'
 	        ]);
 
 	         Mahasiswa::create([
@@ -89,7 +89,7 @@ class MahasiswaTableSeeder extends Seeder
 	            'tempatlahir' => 'Banten',
 	            'tanggallahir' => '1997-02-01',
 	            'telp' => '081234567892',
-	            'user_id' => '1167040001'
+	            'user_id' => '7'
 	        ]);
 
 	        Mahasiswa::create([
@@ -100,7 +100,7 @@ class MahasiswaTableSeeder extends Seeder
 	            'tempatlahir' => 'Jakarta',
 	            'tanggallahir' => '1998-04-03',
 	            'telp' => '081223656857',
-	            'user_id' => '1167040002'
+	            'user_id' => '8'
 	        ]);
 
 	         Mahasiswa::create([
@@ -111,7 +111,7 @@ class MahasiswaTableSeeder extends Seeder
 	            'tempatlahir' => 'Bandung',
 	            'tanggallahir' => '1997-06-05',
 	            'telp' => '083856741124',
-	            'user_id' => '1167050001'
+	            'user_id' => '9'
 	        ]);
 
 	         Mahasiswa::create([
@@ -122,7 +122,7 @@ class MahasiswaTableSeeder extends Seeder
 	            'tempatlahir' => 'Yogyakarta',
 	            'tanggallahir' => '1997-08-07',
 	            'telp' => '089789100201',
-	            'user_id' => '1167050002'
+	            'user_id' => '10'
 	        ]);
 
 	         Mahasiswa::create([
@@ -133,7 +133,7 @@ class MahasiswaTableSeeder extends Seeder
 	            'tempatlahir' => 'Semarang',
 	            'tanggallahir' => '1998-10-09',
 	            'telp' => '089789103202',
-	            'user_id' => '1167050001'
+	            'user_id' => '11'
 	        ]);
 
 	         Mahasiswa::create([
@@ -144,7 +144,7 @@ class MahasiswaTableSeeder extends Seeder
 	            'tempatlahir' => 'Surabaya',
 	            'tanggallahir' => '1997-12-11',
 	            'telp' => '081256753892',
-	            'user_id' => '1167030008'
+	            'user_id' => '12'
 	        ]);
 
 	          Mahasiswa::create([
@@ -178,7 +178,7 @@ class MahasiswaTableSeeder extends Seeder
 	            'tempatlahir' => 'Banten',
 	            'tanggallahir' => '1999-02-01',
 	            'telp' => '081234342870',
-	            'user_id' => '1177010001'
+	            'user_id' => '13'
 	        ]);
 
 	        Mahasiswa::create([
@@ -189,7 +189,7 @@ class MahasiswaTableSeeder extends Seeder
 	            'tempatlahir' => 'Jakarta',
 	            'tanggallahir' => '2000-04-03',
 	            'telp' => '089344550009',
-	            'user_id' => '1177010002'
+	            'user_id' => '14'
 	        ]);
 
 	         Mahasiswa::create([
@@ -200,7 +200,7 @@ class MahasiswaTableSeeder extends Seeder
 	            'tempatlahir' => 'Bandung',
 	            'tanggallahir' => '1999-06-05',
 	            'telp' => '083850004333',
-	            'user_id' => '1177020001'
+	            'user_id' => '15'
 	        ]);
 
 	         Mahasiswa::create([
@@ -211,7 +211,7 @@ class MahasiswaTableSeeder extends Seeder
 	            'tempatlahir' => 'Yogyakarta',
 	            'tanggallahir' => '1998-08-07',
 	            'telp' => '089444100200',
-	            'user_id' => '1177020002'
+	            'user_id' => '16'
 	        ]);
 
 	         Mahasiswa::create([
@@ -222,7 +222,7 @@ class MahasiswaTableSeeder extends Seeder
 	            'tempatlahir' => 'Semarang',
 	            'tanggallahir' => '1999-10-09',
 	            'telp' => '089744227889',
-	            'user_id' => '1177030001'
+	            'user_id' => '17'
 	        ]);
 
 	         Mahasiswa::create([
@@ -233,7 +233,7 @@ class MahasiswaTableSeeder extends Seeder
 	            'tempatlahir' => 'Surabaya',
 	            'tanggallahir' => '2000-12-11',
 	            'telp' => '081256700145',
-	            'user_id' => '1177030002'
+	            'user_id' => '18'
 	        ]);
 
 	          Mahasiswa::create([
@@ -244,7 +244,7 @@ class MahasiswaTableSeeder extends Seeder
 	            'tempatlahir' => 'Banten',
 	            'tanggallahir' => '1998-02-01',
 	            'telp' => '081234342872',
-	            'user_id' => '1177030001'
+	            'user_id' => '19'
 	        ]);
 
 	        Mahasiswa::create([
@@ -255,7 +255,7 @@ class MahasiswaTableSeeder extends Seeder
 	            'tempatlahir' => 'Jakarta',
 	            'tanggallahir' => '1999-04-03',
 	            'telp' => '089344550001',
-	            'user_id' => '1177040002'
+	            'user_id' => '20'
 	        ]);
 
 	         Mahasiswa::create([
@@ -266,7 +266,7 @@ class MahasiswaTableSeeder extends Seeder
 	            'tempatlahir' => 'Bandung',
 	            'tanggallahir' => '1998-06-05',
 	            'telp' => '083850004332',
-	            'user_id' => '1177050001'
+	            'user_id' => '21'
 	        ]);
 
 	         Mahasiswa::create([
@@ -277,7 +277,7 @@ class MahasiswaTableSeeder extends Seeder
 	            'tempatlahir' => 'Yogyakarta',
 	            'tanggallahir' => '1998-08-07',
 	            'telp' => '089444100202',
-	            'user_id' => '1177050002'
+	            'user_id' => '22'
 	        ]);
 
 	         Mahasiswa::create([
@@ -288,7 +288,7 @@ class MahasiswaTableSeeder extends Seeder
 	            'tempatlahir' => 'Semarang',
 	            'tanggallahir' => '2000-10-09',
 	            'telp' => '089744227888',
-	            'user_id' => '1177060001'
+	            'user_id' => '23'
 	        ]);
 
 	         Mahasiswa::create([
@@ -299,7 +299,7 @@ class MahasiswaTableSeeder extends Seeder
 	            'tempatlahir' => 'Surabaya',
 	            'tanggallahir' => '1999-12-11',
 	            'telp' => '081256700144',
-	            'user_id' => '1177060002'
+	            'user_id' => '24'
 	        ]);
 
 	         Mahasiswa::create([
@@ -333,7 +333,7 @@ class MahasiswaTableSeeder extends Seeder
 	            'tempatlahir' => 'Banten',
 	            'tanggallahir' => '2000-02-01',
 	            'telp' => '081234577550',
-	            'user_id' => '1187010001'
+	            'user_id' => '25'
 	        ]);
 
 	        Mahasiswa::create([
@@ -344,7 +344,7 @@ class MahasiswaTableSeeder extends Seeder
 	            'tempatlahir' => 'Jakarta',
 	            'tanggallahir' => '2001-04-03',
 	            'telp' => '081229876534',
-	            'user_id' => '1187010002'
+	            'user_id' => '26'
 	        ]);
 
 	         Mahasiswa::create([
@@ -355,7 +355,7 @@ class MahasiswaTableSeeder extends Seeder
 	            'tempatlahir' => 'Bandung',
 	            'tanggallahir' => '2001-06-05',
 	            'telp' => '083856741113',
-	            'user_id' => '1187020001'
+	            'user_id' => '27'
 	        ]);
 
 	         Mahasiswa::create([
@@ -366,7 +366,7 @@ class MahasiswaTableSeeder extends Seeder
 	            'tempatlahir' => 'Yogyakarta',
 	            'tanggallahir' => '2000-08-07',
 	            'telp' => '089789100210',
-	            'user_id' => '1187020002'
+	            'user_id' => '28'
 	        ]);
 
 	         Mahasiswa::create([
@@ -377,18 +377,18 @@ class MahasiswaTableSeeder extends Seeder
 	            'tempatlahir' => 'Semarang',
 	            'tanggallahir' => '2002-10-09',
 	            'telp' => '089789144400',
-	            'user_id' => '1187030001'
+	            'user_id' => '29'
 	        ]);
 
 	         Mahasiswa::create([
 	        	'nim' => '1187030002',
-	            'nama' => 'Syafina Mawarni',
+	            'nama' => 'Syafira Angelika',
 	            'jurusan' => '3',
 	            'semester' => '2',
 	            'tempatlahir' => 'Surabaya',
 	            'tanggallahir' => '2001-12-11',
 	            'telp' => '081256743291',
-	            'user_id' => '1187030002'
+	            'user_id' => '30'
 	        ]);
 
 	          Mahasiswa::create([
