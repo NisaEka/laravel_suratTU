@@ -19,7 +19,8 @@ class Surat extends Model
 		'detail',
         'user_id',
         'hasread',
-        'status'
+        'status',
+        'lampiran'
 
     ];
 

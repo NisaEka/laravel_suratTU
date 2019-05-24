@@ -179,3 +179,15 @@ Route::post('surats/search', [
 Route::get('admin/suratmasuk', 'SuratsController@suratmasuk');
 Route::get('admin/suratproses', 'SuratsController@suratproses');
 Route::get('admin/suratkeluar', 'SuratsController@suratkeluar');
+
+/*
+|--------------------------------------------------------------------------
+| Pejabat Routes
+|--------------------------------------------------------------------------
+*/
+
+Route::resource('pejabats', 'PejabatsController', ['except' => ['show']]);
+Route::post('pejabats/search', [
+    'as' => 'pejabats.search',
+    'uses' => 'PejabatsController@search'
+]);

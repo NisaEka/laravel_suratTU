@@ -4,9 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Jenissurat extends Model
+class Pejabat extends Model
 {
-    public $table = "jenissurats";
+    public $table = "pejabats";
 
     public $primaryKey = "id";
 
@@ -15,8 +15,8 @@ class Jenissurat extends Model
     public $fillable = [
 		'id',
 		'name',
-        'detail',
-        'format'
+		'jabatan',
+		'nip',
 
     ];
 
@@ -24,5 +24,5 @@ class Jenissurat extends Model
         // create rules
     ];
 
-    // Jenissurat 
+    // Pejabat 
 }

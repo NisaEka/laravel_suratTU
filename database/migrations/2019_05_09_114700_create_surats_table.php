@@ -21,6 +21,7 @@ class CreateSuratsTable extends Migration
 			$table->text('detail');
             $table->boolean('hasread');
             $table->enum('status', ['masuk', 'proses', 'selesai']);
+            $table->string('lampiran');
 
             $table->timestamps();
         });

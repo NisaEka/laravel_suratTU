@@ -25,19 +25,24 @@
     </li>
     @endif
     <li class="sidebar-header"><span>Surat</span></li>
-    <li class="nav-item @if (Request::is(cms()->backendRoute.'/dashboard')) active @endif">
+    <li class="nav-item @if (Request::is('admin/suratmasuk') || Request::is('admin/suratmasuk/*')) active @endif">
         <a class="nav-link" href="{!! url('admin/suratmasuk') !!}"><span class="fa fa-fw fa-envelope"></span> Surat Masuk</a>
     </li>
-    <li class="nav-item @if (Request::is(cms()->backendRoute.'/dashboard')) active @endif">
+    <li class="nav-item @if (Request::is('admin/suratproses') || Request::is('admin/suratproses/*')) active @endif">
         <a class="nav-link" href="{!! url('admin/suratproses') !!}"><span class="fa fa-fw fa-envelope"></span> Surat Di Proses</a>
     </li>
-    <li class="nav-item @if (Request::is(cms()->backendRoute.'/dashboard')) active @endif">
+    <li class="nav-item @if (Request::is('admin/suratkeluar') || Request::is('admin/suratkeluar/*')) active @endif">
         <a class="nav-link" href="{!! url('admin/suratkeluar') !!}"><span class="fa fa-fw fa-envelope"></span> Surat Keluar</a>
     </li>
     <li class="sidebar-header"><span>Lainnya</span></li>
-    <li class="nav-item @if (Request::is(cms()->backendRoute.'/dashboard')) active @endif">
-        <a class="nav-link" href="{{route('mahasiswas.index')}}"><span class="fa fa-fw fa-user"></span> Mahasiswa</a>
+    @if (Route::get('admin/users'))
+    <li class="nav-item @if (Request::is('admin/users') || Request::is('admin/users/*')) active @endif">
+        <a class="nav-link" href="{!! url('admin/users') !!}"><span class="fa fa-fw fa-users"></span> Users</a>
     </li>
+    <li class="nav-item @if (Request::is('pejabats') || Request::is('pejabats/*')) active @endif">
+        <a class="nav-link" href="{!! url('pejabats') !!}"><span class="fa fa-fw fa-book"></span> Pejabat</a>
+    </li>
+    @endif
     <li class="nav-item @if (Request::is(cms()->backendRoute.'/dashboard')) active @endif">
         <a class="nav-link" href="{{route('jenissurats.index')}}"><span class="fa fa-fw fa-envelope"></span> Jenis Surat</a>
     </li>

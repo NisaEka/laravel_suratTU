@@ -13,21 +13,21 @@ class CreateMahasiswasTable extends Migration
      */
     public function up()
     {
-        Schema::dropIfExists('mahasiswas');
+   //      Schema::dropIfExists('mahasiswas');
         
-        Schema::create('mahasiswas', function (Blueprint $table) {
-            $table->increments('id');
-			$table->string('nim',10);
-			$table->string('nama',50);
-			$table->integer('jurusan');
-			$table->integer('semester');
-			$table->string('tempatlahir',50)->nullable();
-			$table->date('tanggallahir')->nullable();
-			$table->string('telp',15)->nullable();
-			$table->integer('user_id');
+   //      Schema::create('mahasiswas', function (Blueprint $table) {
+   //          $table->increments('id');
+			// $table->string('nim',10);
+			// $table->string('nama',50);
+			// $table->integer('jurusan');
+			// $table->integer('semester');
+			// $table->string('tempatlahir',50)->nullable();
+			// $table->date('tanggallahir')->nullable();
+			// $table->string('telp',15)->nullable();
+			// $table->integer('user_id');
 
-            $table->timestamps();
-        });
+   //          $table->timestamps();
+   //      });
     }
 
     /**
