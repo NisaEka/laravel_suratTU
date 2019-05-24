@@ -1,20 +1,25 @@
-<div class="container">
+@extends('cms::layouts.dashboard')
+
+@section('pageTitle') Pejabat @stop
+
+@section('content')
+<div class="container row">
 
     <div class="">
         {{ Session::get('message') }}
     </div>
 
-    <div class="row">
+    <div class="col-md-12">
         <div class="pull-right">
             {!! Form::open(['route' => 'pejabats.search']) !!}
-            <input class="form-control form-inline pull-right" name="search" placeholder="Search">
+            <input class="form-control form-inline pull-right" style="margin-top: 25px"  name="search" placeholder="Search">
             {!! Form::close() !!}
         </div>
         <h1 class="pull-left">Pejabats</h1>
-        <a class="btn btn-primary pull-right" style="margin-top: 25px" href="{!! route('pejabats.create') !!}">Add New</a>
+        <a class="btn btn-primary pull-right" style="margin-top: 25px; margin-right: 10px" href="{!! route('pejabats.create') !!}">Add New</a>
     </div>
 
-    <div class="row">
+    <div class="col-md-12">
         @if($pejabats->isEmpty())
             <div class="well text-center">No pejabats found.</div>
         @else
@@ -48,3 +53,4 @@
         @endif
     </div>
 </div>
+@stop

@@ -15,13 +15,12 @@ class CreateSuratsTable extends Migration
     {
         Schema::create('surats', function (Blueprint $table) {
             $table->increments('id');
-			$table->integer('mhs_id');
             $table->integer('user_id');
 			$table->integer('jenissurat');
 			$table->text('detail');
             $table->boolean('hasread');
             $table->enum('status', ['masuk', 'proses', 'selesai']);
-            $table->string('lampiran');
+            $table->string('lampiran')->nullable();
 
             $table->timestamps();
         });

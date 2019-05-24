@@ -16,8 +16,8 @@ class CreateJenissuratsTable extends Migration
         Schema::create('jenissurats', function (Blueprint $table) {
             $table->increments('id');
 			$table->string('name',100);
-            $table->text('detail');
-            $table->text('format');
+            $table->text('detail')->nullable();
+            $table->text('format')->nullable();
 
 
             $table->timestamps();

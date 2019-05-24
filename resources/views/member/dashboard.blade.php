@@ -5,12 +5,7 @@
 @section('content')
 
     <div class="col-md-12 mt-4">
-        <div class="row">
-            @if (Session::get('original_user'))
-                <a class="btn btn-dark pull-right" href="{{ url('/users/switch-back') }}">Return to your Login</a>
-            @endif
-        </div>
-        
+       
         <div class="row">
             <div class="col-md-5">
               <div class="jumbotron" style="background:#0f69d7; color:#ffffff; height:290px; padding:20px;">

@@ -1,3 +1,8 @@
+@extends('cms::layouts.dashboard')
+
+@section('pageTitle') Pejabat:edit @stop
+
+@section('content')
 <div class="">
     {{ Session::get('message') }}
 </div>
@@ -12,3 +17,4 @@
 
     {!! Form::close() !!}
 </div>
+@stop

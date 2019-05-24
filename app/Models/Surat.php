@@ -14,7 +14,6 @@ class Surat extends Model
 
     public $fillable = [
 		'id',
-		'mhs_id',
 		'jenissurat',
 		'detail',
         'user_id',

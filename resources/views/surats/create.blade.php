@@ -13,11 +13,11 @@
 		<div class="col-lg-12">
 		    {!! Form::open(['route' => 'surats.store']) !!}
 		    <!-- identitas mahasiswa -->
-			@foreach(app(App\Models\Mahasiswa::class)->where('user_id', Auth::user()->id)->get() as $mahasiswa)
+			@foreach(app(App\Models\User::class)->where('id', Auth::user()->id)->get() as $mahasiswa)
                 @input_maker_create('mhs_id', ['type' => 'hidden', 'default_value' => $mahasiswa->id])
 
 			    @input_maker_label('Nama : ')
-                @input_maker_create('', ['type' => 'string', 'default_value' => $mahasiswa->nama,'custom'=>'readonly'])
+                @input_maker_create('', ['type' => 'string', 'default_value' => $mahasiswa->name,'custom'=>'readonly'])
 
                 @input_maker_label('Program Studi : ')
                 @input_maker_create('', ['type' => 'string', 'default_value' => app(App\Models\Jurusan::class)->find($mahasiswa->jurusan)->name,'custom'=>'readonly'])
