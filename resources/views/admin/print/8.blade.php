@@ -1,6 +1,7 @@
 
 	<script type="text/javascript">
-		alert("tekan tombol ctrl+p untuk print file")
+		// alert("tekan tombol ctrl+p untuk print file");
+		window.print();
 	</script>
 
 	<!-- kop surat -->
