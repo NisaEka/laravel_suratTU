@@ -38,7 +38,7 @@
                                 <a href="{!! route('surats.edit', [$surat->id]) !!}">{{ app(App\Models\Jenissurat::class)->find($surat->jenissurat)->name }}</a>
                             </td>
                             <td>
-                                <a href="{{ url('admin/print-surat',$surat->id) }}" class="btn btn-primary fa fa-print"> Print Surat</a>
+                                <a href="{{ url('admin/print-surat',$surat->id) }}" target="_blank" class="btn btn-primary fa fa-print"> Print Surat</a>
                                 
                             </td>
                             <td>
