@@ -54,6 +54,12 @@ class SuratsController extends Controller
         return view('admin.suratkeluar')->with('surats', $surats);          
     }
 
+    public function print($id)
+    {
+        $surat = $this->service->find($id);
+        return view('admin.suratprint')->with('surat',$surat);
+    }
+
     /**
      * Display a listing of the resource searched.
      *

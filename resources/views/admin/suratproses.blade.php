@@ -26,6 +26,7 @@
                         <th>#</th>
                         <th>Tanggal</th>
                         <th>Surat</th>
+                        <th>File</th>
                         <th width="50px">Action</th>
                     </thead>
                     <tbody>
@@ -35,6 +36,10 @@
                             <td>{{ date('d/m/Y',strtotime($surat->updated_at)) }}</td>
                             <td>
                                 <a href="{!! route('surats.edit', [$surat->id]) !!}">{{ app(App\Models\Jenissurat::class)->find($surat->jenissurat)->name }}</a>
+                            </td>
+                            <td>
+                                <a href="{{ url('admin/print-surat',$surat->id) }}" class="btn btn-primary fa fa-print"> Print Surat</a>
+                                
                             </td>
                             <td>
                                 {!! Form::model($surat, ['route' => ['surats.update', $surat->id], 'method' => 'patch']) !!}

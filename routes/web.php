@@ -179,6 +179,7 @@ Route::post('surats/search', [
 Route::get('admin/suratmasuk', 'SuratsController@suratmasuk');
 Route::get('admin/suratproses', 'SuratsController@suratproses');
 Route::get('admin/suratkeluar', 'SuratsController@suratkeluar');
+Route::get('admin/print-surat/{id}', 'SuratsController@print');
 
 /*
 |--------------------------------------------------------------------------

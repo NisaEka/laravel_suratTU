@@ -43,7 +43,7 @@
         <a class="nav-link" href="{!! url('pejabats') !!}"><span class="fa fa-fw fa-book"></span> Pejabat</a>
     </li>
     @endif
-    <li class="nav-item @if (Request::is(cms()->backendRoute.'/dashboard')) active @endif">
+    <li class="nav-item @if (Request::is('jenissurats') || Request::is('jenissurats/*')) active @endif">
         <a class="nav-link" href="{{route('jenissurats.index')}}"><span class="fa fa-fw fa-envelope"></span> Jenis Surat</a>
     </li>
 @endif

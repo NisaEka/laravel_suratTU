@@ -16,11 +16,11 @@
 
 	    {!! Form::model($surat, ['route' => ['surats.update', $surat->id], 'method' => 'patch']) !!}
 
-	    @foreach(app(App\Models\Mahasiswa::class)->where('id', $surat->mhs_id)->get() as $mahasiswa)
+	    @foreach(app(App\Models\User::class)->where('id', $surat->user_id)->get() as $mahasiswa)
                 @input_maker_create('mhs_id', ['type' => 'hidden', 'default_value' => $mahasiswa->id])
 
 			    @input_maker_label('Nama : ')
-                @input_maker_create('', ['type' => 'string', 'default_value' => $mahasiswa->nama,'custom'=>'readonly'])
+                @input_maker_create('', ['type' => 'string', 'default_value' => $mahasiswa->name,'custom'=>'readonly'])
 
                 @input_maker_label('Program Studi : ')
                 @input_maker_create('', ['type' => 'string', 'default_value' => app(App\Models\Jurusan::class)->find($mahasiswa->jurusan)->name,'custom'=>'readonly'])
